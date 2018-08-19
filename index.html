@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Saffron Interactive Carousel</title>
+
+    <!-- Tell mobile phones not to lie about their true width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="css/myStyles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header_logo_c">
+            <img class="header_logo_img" src="images/saffron_logo_white.png" alt="Saffron Logo" />
+        </div>
+        <div class="header_title">
+            <h1>HTML5 Assignment</h1>
+        </div>
+        <div class="header_nav">
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-angle-right"></i>
+        </div>
+    </header>
+    <main>
+        <section id="carousel_features" class="carousel_c animated zoomIn">
+            <div class="carousel_title">
+                <h2>How we create unforgettable experiences</h2>
+            </div>
+            <div class="carousel_nav">
+                <a class="nav_left_arrow" onclick="changeItem(-1)">
+                    <i class="fas fa-angle-left"></i>
+                </a>
+                <div class="nav_dots_c">
+                    <i class="nav_dot fas fa-circle" onclick="showCurrentItem(0)"></i>
+                    <i class="nav_dot fas fa-circle" onclick="showCurrentItem(1)"></i>
+                    <i class="nav_dot fas fa-circle" onclick="showCurrentItem(2)"></i>
+                    <i class="nav_dot fas fa-circle" onclick="showCurrentItem(3)"></i>
+                </div>
+                <a class="nav_right_arrow" onclick="changeItem(1)">
+                    <i class="fas fa-angle-right"></i>
+                </a>
+
+            </div>
+
+            <div class="carousel_content">
+                <article class="carousel_item animated fadeIn faster">
+                    <figure class="carousel_icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </figure>
+                    <figcaption class="carousel_caption">
+                        <h3>
+                            Mobile learning and apps
+                        </h3>
+                        <p>Learners expect experiences they can touch and tools which are accessible from anywhere. We use HTML5 to build responsive content which learners can navigate like the apps and websites they love. One experience on any device.</p>
+                    </figcaption>
+                </article>
+                <article class="carousel_item animated fadeIn faster">
+                    <figure class="carousel_icon">
+                        <i class="fas fa-video"></i>
+                    </figure>
+                    <figcaption class="carousel_caption">
+                        <h3>
+                            Animations and video
+                        </h3>
+                        <p>An eye-popping animation is a great way to open a course. It’s also a standalone asset to help you promote it. You can have a message from your CEO to open the training, video testimonials from some of your employees, interviews with your subject matter experts or dramatised scenarios using actors. You can film in a studio, on location or in virtual worlds (using green or blue screen).</p>
+                    </figcaption>
+                </article>
+                <article class="carousel_item animated fadeIn faster">
+                    <figure class="carousel_icon">
+                        <i class="fas fa-users"></i>
+                    </figure>
+                    <figcaption class="carousel_caption">
+                        <h3>
+                            Interaction and scenarios
+                        </h3>
+                        <p>What makes great classroom training great? Often it’s the instructor involving the audience, encouraging interaction – and making eye contact. We believe online training is no different. Our elearning solutions are fully interactive, using activities, quizzes and highly developed scenarios.</p>
+                    </figcaption>
+                </article>
+                <article class="carousel_item animated fadeIn faster">
+                    <figure class="carousel_icon">
+                        <i class="fas fa-gamepad"></i>
+                    </figure>
+                    <figcaption class="carousel_caption">
+                        <h3>
+                            Gamification
+                        </h3>
+                        <p>Game mechanics in learning motivate achievement by satisfying psychological needs. We build in performance indicators that measure how well learners doing as they answer questions, complete tasks or make decisions. This flags up weaker areas early on and spurs them on when they’re on a roll.</p>
+                    </figcaption>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 0, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400 // values from 0 to 3000, with step 50ms
+        });
+
+    </script>
+
+    <script src="js/myScript.js"></script>
+
+</body>
+
+</html>
